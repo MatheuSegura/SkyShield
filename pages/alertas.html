@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas Ativos — SkyShield</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Sky<span>Shield</span></a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="alertas.html">Alertas</a></li>
+                    <li><a href="previsao.html">Previsao</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-header">
+            <h1>Alertas Climaticos Ativos</h1>
+            <p>Monitoramento em tempo real das regioes de risco</p>
+        </div>
+
+        <section>
+            <div class="container">
+
+                <div class="form-grupo filtro-nivel">
+                    <label for="filtro-nivel">Filtrar por nivel:</label>
+                    <select id="filtro-nivel">
+                        <option value="todos">Todos os niveis</option>
+                        <option value="emergencia">Emergencia</option>
+                        <option value="perigo">Perigo</option>
+                        <option value="atencao">Atencao</option>
+                        <option value="informativo">Informativo</option>
+                    </select>
+                </div>
+
+                <div id="lista-alertas">
+
+                    <article class="alerta-card emergencia">
+                        <div>
+                            <h3>Petropolis — RJ</h3>
+                            <p>Tipo: Chuva Extrema &nbsp;|&nbsp; Probabilidade: 92% &nbsp;|&nbsp; Antecedencia: 5 dias</p>
+                            <p>Data estimada do evento: 14/06/2026</p>
+                            <p>Recomendacao: Evite areas de encosta. Fique em local seguro e elevado.</p>
+                        </div>
+                        <span class="badge badge-critico">EMERGENCIA</span>
+                    </article>
+
+                    <article class="alerta-card perigo">
+                        <div>
+                            <h3>Blumenau — SC</h3>
+                            <p>Tipo: Enchente &nbsp;|&nbsp; Probabilidade: 80% &nbsp;|&nbsp; Antecedencia: 6 dias</p>
+                            <p>Data estimada do evento: 15/06/2026</p>
+                            <p>Recomendacao: Evite areas proximas a rios. Tenha kit de emergencia pronto.</p>
+                        </div>
+                        <span class="badge badge-alto">PERIGO</span>
+                    </article>
+
+                    <article class="alerta-card perigo">
+                        <div>
+                            <h3>Juazeiro do Norte — CE</h3>
+                            <p>Tipo: Seca Prolongada &nbsp;|&nbsp; Probabilidade: 75% &nbsp;|&nbsp; Antecedencia: 7 dias</p>
+                            <p>Data estimada do evento: 16/06/2026</p>
+                            <p>Recomendacao: Reforce reservas de agua. Antecipe a colheita se possivel.</p>
+                        </div>
+                        <span class="badge badge-alto">PERIGO</span>
+                    </article>
+
+                    <article class="alerta-card atencao">
+                        <div>
+                            <h3>Sao Jose dos Campos — SP</h3>
+                            <p>Tipo: Tempestade Severa &nbsp;|&nbsp; Probabilidade: 60% &nbsp;|&nbsp; Antecedencia: 3 dias</p>
+                            <p>Data estimada do evento: 12/06/2026</p>
+                            <p>Recomendacao: Evite areas abertas. Desligue aparelhos eletronicos.</p>
+                        </div>
+                        <span class="badge badge-moderado">ATENCAO</span>
+                    </article>
+
+                    <article class="alerta-card informativo">
+                        <div>
+                            <h3>Corumba — MS</h3>
+                            <p>Tipo: Chuva Fraca &nbsp;|&nbsp; Probabilidade: 35% &nbsp;|&nbsp; Antecedencia: 4 dias</p>
+                            <p>Data estimada do evento: 13/06/2026</p>
+                            <p>Recomendacao: Sem necessidade de acao imediata. Continue monitorando.</p>
+                        </div>
+                        <span class="badge badge-baixo">INFORMATIVO</span>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cinza">
+            <div class="secao-titulo">
+                <h2>Legenda dos Niveis</h2>
+                <div class="linha-rosa"></div>
+            </div>
+            <div class="cards-grid container">
+                <article class="card card-emergencia">
+                    <span class="badge badge-critico">EMERGENCIA</span>
+                    <p class="card-descricao">Probabilidade acima de 85% com 5+ dias de antecedencia. Acao imediata necessaria.</p>
+                </article>
+                <article class="card card-perigo">
+                    <span class="badge badge-alto">PERIGO</span>
+                    <p class="card-descricao">Probabilidade entre 70% e 84%. Preparacao urgente recomendada.</p>
+                </article>
+                <article class="card card-atencao">
+                    <span class="badge badge-moderado">ATENCAO</span>
+                    <p class="card-descricao">Probabilidade entre 50% e 69%. Monitorar a situacao nas proximas 24h.</p>
+                </article>
+                <article class="card card-informativo">
+                    <span class="badge badge-baixo">INFORMATIVO</span>
+                    <p class="card-descricao">Probabilidade abaixo de 50%. Sem necessidade de acao imediata.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SkyShield &copy; 2026 &mdash; FIAP &bull; ADS &bull; 1TDSPX &bull; Global Solution 2026/1</p>
+        <p class="footer-creditos">Pietro Ibra &bull; Matheus Segura &bull; Enzo Leiva &bull; Kaua Fiuza</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
