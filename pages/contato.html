@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — SkyShield</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Sky<span>Shield</span></a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="alertas.html">Alertas</a></li>
+                    <li><a href="previsao.html">Previsao</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="integrantes.html">Integrantes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page-header">
+            <h1>Entre em Contato</h1>
+            <p>Envie uma mensagem para a equipe SkyShield</p>
+        </div>
+
+        <section>
+            <form class="form-contato" id="form-contato" novalidate>
+
+                <div class="form-grupo">
+                    <label for="nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome completo"
+                        autocomplete="name"
+                    >
+                    <span class="msg-erro" id="erro-nome"></span>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seu@email.com"
+                        autocomplete="email"
+                    >
+                    <span class="msg-erro" id="erro-email"></span>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Duvida sobre o sistema</option>
+                        <option value="sugestao">Sugestao de melhoria</option>
+                        <option value="parceria">Proposta de parceria</option>
+                        <option value="outro">Outro assunto</option>
+                    </select>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        placeholder="Escreva sua mensagem aqui..."
+                        rows="5"
+                    ></textarea>
+                    <span class="msg-erro" id="erro-mensagem"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primario btn-largura-total">
+                    Enviar Mensagem
+                </button>
+
+                <div class="form-sucesso" id="form-sucesso">
+                    Mensagem enviada com sucesso! Entraremos em contato em breve.
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SkyShield &copy; 2026 &mdash; FIAP &bull; ADS &bull; 1TDSPX &bull; Global Solution 2026/1</p>
+        <p class="footer-creditos">Pietro Ibra &bull; Matheus Segura &bull; Enzo Leiva &bull; Kaua Fiuza</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
